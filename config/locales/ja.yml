@@ -9,3 +9,21 @@ Saving to: ‘ja.yml’
 
 2019-04-17 09:48:44 (63.2 MB/s) - ‘ja.yml’ saved [5117/5117]
 
+
+ja:
+    activerecord:
+        errors:
+            messages:
+                record_invalid: "バリデーションに失敗しました:%{errors}"
+                restrict_dependent_destroy:
+                    has_one: "%{record}が存在しているので削除出来ません"
+                    has_many: "%{record}が存在しているので削除できません"
+        models:
+            tasks: タスク
+        attributes:
+            task:
+                id: ID
+                name: 名称
+                description: 詳しい説明
+                created_at: 登録日時
+                updated_at: 更新日時
